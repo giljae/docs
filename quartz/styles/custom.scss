@@ -7,3 +7,14 @@
   --bodyFont: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --headerFont: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
+
+footer p:first-child {
+  display: none;
+}
+
+footer::before {
+  content: "© 2026 Giljae Joo";
+  display: block;
+  font-size: 0.9em;
+  color: var(--gray);
+}

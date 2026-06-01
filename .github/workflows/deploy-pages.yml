@@ -28,7 +28,12 @@ jobs:
         with:
           repository: giljae/docs_vault
           token: ${{ secrets.VAULT_ACCESS_TOKEN }}
-          path: content
+          path: vault-content
+
+      - name: Copy vault into content
+        run: |
+          rm -rf content
+          cp -r vault-content content
 
       - name: Setup Node
         uses: actions/setup-node@v4

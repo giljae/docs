@@ -23,11 +23,11 @@
   color: var(--dark);
 }
 
-footer p:first-child {
+footer p {
   display: none;
 }
 
-footer p:last-child::before {
+footer ul::before {
   content: "© 2026 Giljae Joo";
   display: block;
   font-size: 0.9em;

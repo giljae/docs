@@ -1,5 +1,5 @@
-# yaml-language-server: $schema=../quartz/plugins/quartz-plugins.schema.json
-cfg:
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+configuration:
   pageTitle: "Giljae's Digital Garden"
   pageTitleSuffix: ""
   enableSPA: true
@@ -18,7 +18,8 @@ cfg:
       body: Source Sans Pro
       code: IBM Plex Mono
 plugins:
-  - src: github:quartz-community/footer
+  - source: github:quartz-community/footer
+    enabled: true
     options:
       links:
         GitHub: https://github.com/giljae/docs

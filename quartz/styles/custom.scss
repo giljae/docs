@@ -27,9 +27,10 @@ footer p:first-child {
   display: none;
 }
 
-footer::before {
+footer p:last-child::before {
   content: "© 2026 Giljae Joo";
   display: block;
   font-size: 0.9em;
   color: var(--gray);
+  margin-bottom: 0.3rem;
 }

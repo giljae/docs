@@ -10,6 +10,13 @@ cfg:
     - private
     - .obsidian
     - "**/.DS_Store"
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Schibsted Grotesk
+      body: Source Sans Pro
+      code: IBM Plex Mono
 plugins:
   - src: github:quartz-community/footer
     options:

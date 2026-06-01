@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../quartz/plugins/quartz-plugins.schema.json
+cfg:
+  pageTitle: "Giljae's Digital Garden"
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  locale: ko-KR
+  baseUrl: giljae.github.io/docs
+  ignorePatterns:
+    - private
+    - .obsidian
+    - "**/.DS_Store"
+plugins:
+  - src: github:quartz-community/footer
+    options:
+      links:
+        GitHub: https://github.com/giljae/docs
+        Blog: https://www.giljae.com

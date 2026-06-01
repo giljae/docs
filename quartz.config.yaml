@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: ko-KR
-  baseUrl: giljae.github.io/docs
+  baseUrl: wiki.giljae.com
   ignorePatterns:
     - private
     - .obsidian

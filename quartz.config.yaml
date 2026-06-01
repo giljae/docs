@@ -41,6 +41,8 @@ configuration:
 plugins:
   - source: github:quartz-community/explicit-publish
     enabled: false
+  - source: github:quartz-community/content-page
+    enabled: true
   - source: github:quartz-community/footer
     enabled: true
     options:

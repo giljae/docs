@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "Giljae's Digital Garden"
+  pageTitle: ":wq"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true

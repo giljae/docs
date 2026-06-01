@@ -39,6 +39,8 @@ configuration:
         highlight: "rgba(143, 159, 169, 0.15)"
         textHighlight: "#b3aa0288"
 plugins:
+  - source: github:quartz-community/explicit-publish
+    enabled: false
   - source: github:quartz-community/footer
     enabled: true
     options:

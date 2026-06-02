@@ -2,6 +2,22 @@
 
 // put your custom CSS here!
 
+// Broken internal links point to concepts that don't have a page yet.
+// Mark them as "planned" (muted, dashed) and disable clicking so they don't
+// 404 — the concept stays listed as a growth signal.
+a.broken {
+  color: var(--gray);
+  border-bottom: 1px dashed var(--gray);
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.7;
+}
+a.broken::after {
+  content: " (예정)";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
 // Explorer: visually separate file entries so wrapped long titles
 // (e.g. "...Cloud AI Support" / "Observal") don't blur together.
 .explorer-content ul li > a {

@@ -77,6 +77,9 @@ plugins:
     enabled: true
     options:
       markdownLinkResolution: shortest
+      # Tag links to non-existent pages with a `.broken` class so they can be
+      # styled as "planned" concepts instead of silently 404-ing.
+      disableBrokenWikilinks: true
     order: 60
   - source: github:quartz-community/description
     enabled: true

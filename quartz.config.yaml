@@ -185,7 +185,10 @@ plugins:
         GitHub: https://github.com/giljae/docs
         Blog: https://www.giljae.com
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    layout:
+      position: right
+      priority: 30
   - source: github:quartz-community/spacer
     enabled: true
     options: {}

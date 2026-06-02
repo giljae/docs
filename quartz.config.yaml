@@ -178,6 +178,22 @@ plugins:
       position: beforeBody
       priority: 5
       condition: not-index
+  - source: github:quartz-community/comments
+    enabled: true
+    options:
+      provider: giscus
+      options:
+        repo: giljae/docs
+        repoId: R_kgDOStkYpQ
+        category: General
+        categoryId: DIC_kwDOStkYpc4C-Uqb
+        mapping: pathname
+        reactionsEnabled: true
+        inputPosition: bottom
+        lang: ko
+    layout:
+      position: afterBody
+      priority: 100
   - source: github:quartz-community/footer
     enabled: true
     options:

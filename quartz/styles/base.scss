@@ -226,6 +226,7 @@ a {
       display: flex;
       height: 100vh;
       position: sticky;
+      overflow-y: auto;
     }
 
     & .sidebar.left {

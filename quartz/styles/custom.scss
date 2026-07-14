@@ -75,3 +75,31 @@ footer::before {
   font-size: 0.85em;
   color: var(--gray);
 }
+
+// Right sidebar: single scroll container.
+// Graph + TOC + Recent Notes + Backlinks exceed 100vh; scrolling the whole
+// panel once is less confusing than nested TOC/backlinks overflow lists.
+.sidebar.right {
+  overscroll-behavior: contain;
+
+  .toc,
+  .backlinks {
+    overflow: visible;
+    flex: 0 0 auto;
+  }
+
+  div:has(> .overflow) {
+    max-height: none;
+    overflow: visible;
+  }
+
+  ul.overflow,
+  ol.overflow {
+    max-height: none;
+    overflow: visible;
+
+    &.gradient-active {
+      mask-image: none;
+    }
+  }
+}
